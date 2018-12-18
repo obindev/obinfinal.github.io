@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#banner{
+background-color: orange;
+
+
+}
+p { border: solid thick orange;
+    border-radius: 1em }
+	
+p { box-shadow: black 0.5em 0.5em 0.3em }
+
+
+	
+</style>
+</head>
+
+<body style="background-color:black; color:white;">
+<div id="banner">
+<span id="maintitle"><b>ELITE Group</b></span>
+</div>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Project</span></a>
+      <ul>
+         <li><a href='video1.html'><span>Music Video</span></a></li>
+         <li><a href='video2.html'><span>Cinema</span></a></li>
+		 <li><a href='gallery/gallery1.html'><span>Graphic design</span></a></li>
+		 <li><a href='racecar/launch.html'><span>Fast Race</span></a></li>
+		  <li><a href='tower/game2.html'><span>Jump to the Sky</span></a></li>
+         <li class='last'><a href='game3/tretis.html'><span>codingtris</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Business</span></a>
+      <ul>
+         <li><a href='about.html'><span>About Us</span></a></li>
+		  <li><a href='book/book.html'><span>Booking</span></a></li>
+         <li class='last'><a href='hire/job.html'><span>Hiring</span></a></li>
+		
+      </ul>
+   </li>
+   <li class='last'><a href='contact.html'><span>Contact us</span></a></li>
+</ul>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="tg/img1.jpg" style="width:100%">
+  <div class="text">All start with some visual effects... </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="tg/img2.jpg" style="width:100%">
+  <div class="text">Pioneered in the Color Grading league...</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="tg/img3.jpg" style="width:100%">
+  <div class="text">We give you joy...with Elite Event!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="tg/img4.jpg" style="width:100%">
+  <div class="text">High level equipment...</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="tg/img5.jpg" style="width:100%">
+  <div class="text">Movie making giant...Since 2011!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="tg/img6.jpg" style="width:100%">
+  <div class="text">High level Music video</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="tg/img7.jpg" style="width:100%">
+  <div class="text">Creative application embedding all the lastest technologies.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="tg/img8.jpg" style="width:100%">
+  <div class="text">Our CEO_Obin G. Koffi. The new face of the digital.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="tg/img9.jpg" style="width:100%">
+  <div class="text">We work with any budget to make you afford your dream.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="tg/img10.jpg" style="width:100%">
+  <div class="text">We are worldwide...</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+   <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<center>
+<div id="overview">
+<blockquote>
+<p>Elite Group is a multimedia startup created on the 
+campus of Minnesota State University, Mankato. The idea
+came from Obin who was interested in graphics and wanted 
+to build a group of passionate designer ready to explore 
+all his facet. 
+</blockquote>
+
+</div>
+<div id="musicvid">
+<h3>MUSIC VIDEO</h3>
+
+<iframe width="1200" height="720" src="https://www.youtube.com/embed/-adMb1zlBA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+</div>
+<br><br>
+<div id="cine">
+<h3>EXPLORE THE CINEMATIC</h3>
+<iframe width="1200" height="720" src="https://www.youtube.com/embed/uXntezWAHgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</center>
+</body>
+</html> 
